@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алёна Маркова](https://up.htmlacademy.ru/adaptive/16/user/768593).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова](https://htmlacademy.ru/profile/id23249).
 
 ---
 
