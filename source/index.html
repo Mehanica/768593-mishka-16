@@ -13,7 +13,7 @@
       </div>
 
       <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню-->
-        <span class="main-nav__toogler"></span>
+        <button class="main-nav__toogler" type="button"></button>
 
         <div class="main-nav__wrapper">
 
@@ -64,7 +64,7 @@
 
         <span class="product__price">Цена: 990 руб.</span>
 
-        <a class="product__btn  btn" type="button">Заказать</a>
+        <a class="product__btn  btn" href="cart.html">Заказать</a>
       </article>
 
       <section class="advantages">
@@ -163,5 +163,31 @@
         </p>
       </div>
     </footer>
+
+    <section class="pop-up  pop-up--show">
+      <h2 class="pop-up__title">Добавить в корзину</h2>
+
+      <form class="pop-up__form">
+        <div class="pop-up__basket">
+          <span class="pop-up__radio-title">Выберите размер:</span>
+
+          <p class="pop-up__choose-size">
+            <label class="square-radio  pop-up__field-radio">S
+              <input class="square-radio__input" type="radio" name="size" checked>
+            </label>
+
+            <label class="square-radio  pop-up__field-radio">M
+              <input class="square-radio__input" type="radio" name="size">
+            </label>
+
+            <label class="square-radio  pop-up__field-radio">
+              <input class="square-radio__input" type="radio" name="size">L
+            </label>
+          </p>
+        </div>
+
+        <button class="btn  btn--invert  pop-up__btn" type="button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
