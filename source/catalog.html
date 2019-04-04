@@ -15,7 +15,7 @@
       </div>
 
       <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню-->
-        <span class="main-nav__toogler"><span></span></span>
+        <button class="main-nav__toogler" type="button"></button>
 
         <div class="main-nav__wrapper">
 
@@ -39,13 +39,13 @@
         <h2 class="catalog__title">Карточки товаров</h2> <!--будет скрыто-->
 
         <article class="catalog__item  product-item">
-          <a class="product-item__picture-link" href="">
+          <a class="product-item__picture-link" href="#">
             <img src="http://placehold.it/150x100" width="" height="" alt="Зайчик-попрыгайчик">
           </a>
 
           <div class="product-item__info">
             <h3 class="product-item__name">
-              <a href="">Зайчик-попрыгайчик</a>
+              <a href="#">Зайчик-попрыгайчик</a>
             </h3>
 
             <span class="product-item__description">Рост 30 см, вес 200 г</span>
@@ -54,18 +54,18 @@
           <div class="product-item__price">
             <p>1 200 руб.</p>
 
-            <a type="button">корзина</a> <!--будет скрыто-->
+            <a href="cart.html">корзина</a> <!--будет скрыто-->
           </div>
         </article>
 
         <article class="catalog__item  product-item">
-          <a class="product-item__picture-link" href="">
+          <a class="product-item__picture-link" href="#">
             <img src="http://placehold.it/150x100" width="" height="" alt="Корзинка для белья">
           </a>
 
           <div class="product-item__info">
             <h3 class="product-item__name">
-              <a href="">Корзинка для белья</a>
+              <a href="#">Корзинка для белья</a>
             </h3>
 
             <span class="product-item__description">Диаметр 15 см, высота 10 см</span>
@@ -74,18 +74,18 @@
           <div class="product-item__price">
             <p>690 руб.</p>
 
-            <a type="button">корзина</a> <!--будет скрыто-->
+            <a href="cart.html">корзина</a> <!--будет скрыто-->
           </div>
         </article>
 
         <article class="catalog__item  product-item">
-          <a class="product-item__picture-link" href="">
+          <a class="product-item__picture-link" href="#">
             <img src="http://placehold.it/150x100" width="" height="" alt="Большая корзинка для игрушек">
           </a>
 
           <div class="product-item__info">
             <h3 class="product-item__name">
-              <a href="">Большая корзинка для игрушек</a>
+              <a href="#">Большая корзинка для игрушек</a>
             </h3>
 
             <span class="product-item__description">Диаметр 30 см, высота 30 см</span>
@@ -94,7 +94,7 @@
           <div class="product-item__price">
             <p>1 500 руб.</p>
 
-            <a type="button">корзина</a> <!--будет скрыто-->
+            <a href="cart.html">корзина</a> <!--будет скрыто-->
           </div>
         </article>
       </section>
@@ -129,5 +129,31 @@
         </p>
       </div>
     </footer>
+
+    <section class="pop-up  pop-up--show">
+      <h2 class="pop-up__title">Добавить в корзину</h2>
+
+      <form class="pop-up__form">
+        <div class="pop-up__basket">
+          <span class="pop-up__radio-title">Выберите размер:</span>
+
+          <p class="pop-up__choose-size">
+            <label class="square-radio  pop-up__field-radio">S
+              <input class="square-radio__input" type="radio" name="size" checked>
+            </label>
+
+            <label class="square-radio  pop-up__field-radio">M
+              <input class="square-radio__input" type="radio" name="size">
+            </label>
+
+            <label class="square-radio  pop-up__field-radio">
+              <input class="square-radio__input" type="radio" name="size">L
+            </label>
+          </p>
+        </div>
+
+        <button class="btn  btn--invert  pop-up__btn" type="button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
