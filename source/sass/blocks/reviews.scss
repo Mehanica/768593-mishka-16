@@ -1,0 +1,44 @@
+.reviews {
+  outline: 2px solid darkgreen;
+  padding-bottom: 44px;
+}
+
+.reviews__list {
+  outline: 2px solid fuchsia;
+  padding-bottom: 125px;
+}
+
+.reviews__title {
+  padding-bottom: 35px;
+  font-size: $font-size-bigger;
+  line-height: 30px / $font-size-bigger;
+  font-weight: 700;
+}
+
+.reviews__item {
+  font-size: $font-size-small;
+  line-height: 30px / $font-size-small;
+  color: $color-secondary-text;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__author-name span {
+  font-weight: 400;
+  color: $color-secondary-text;
+}
+
+.reviews__prev {
+  @include visually-hidden;
+}
+
+.reviews__next {
+  @include visually-hidden;
+}
+
+.reviews__write {
+  font-size: $font-size-medium;
+}

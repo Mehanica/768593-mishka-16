@@ -1,0 +1,45 @@
+.product {
+  outline: 2px solid salmon;
+  margin-bottom: 30px;
+}
+
+.product__name {
+  outline: 2px solid olive;
+  padding-bottom: 30px;
+  font-size: $font-size-bigger;
+  line-height: 30px / $font-size-bigger;
+}
+
+.product__name span {
+  font-size: $font-size-main;
+  line-height: 20px / $font-size-main;
+  font-weight: 700;
+  color: $color-green;
+}
+
+.product__note {
+  padding-bottom: 30px;
+  font-size: $font-size-small;
+  line-height: 24px / $font-size-small;
+  color: $color-grey-dark;
+}
+
+.product__description {
+  padding-bottom: 30px;
+  color: $color-grey-dark;
+}
+
+.product__photo {
+  padding-bottom: 30px;
+}
+
+.product__price {
+  padding-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: $color-grey-dark;
+}
+
+.product__btn {
+
+}

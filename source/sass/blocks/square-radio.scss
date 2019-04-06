@@ -1,0 +1,9 @@
+.square-radio {
+  line-height: 16px / $font-size-main;
+  font-weight: 700;
+  color: $color-secondary-text;
+}
+
+.square-radio__input {
+  @include visually-hidden;
+}

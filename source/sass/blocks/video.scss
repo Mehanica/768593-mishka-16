@@ -1,0 +1,32 @@
+.video {
+  outline: 2px solid blue;
+  padding-bottom: 30px;
+}
+
+.video__title {
+  padding-left: 90px;
+  padding-right: 40px;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  font-weight: 700;
+}
+
+.video__video {
+  padding-bottom: 32px;
+}
+
+.video__note {
+  padding-left: 33px;
+  padding-right: 38px;
+  padding-bottom: 30px;
+  font-size: $font-size-smallest;
+  line-height: 24px / $font-size-smallest;
+  color: $color-secondary-text;
+}
+
+.video__order-btn {
+  margin-left: 33px;
+  margin-right: 38px;
+  padding-left: 23px;
+  padding-right: 23px;
+}

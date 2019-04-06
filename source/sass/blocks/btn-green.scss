@@ -1,0 +1,16 @@
+.btn-green {
+  display: flex;
+  padding: 30px;
+  font-size: $font-size-big;
+  font-weight: 700;
+  color: $color-invert-text;
+  text-decoration: none;
+  
+  &--left {
+    background-color: $color-green-background-light;
+  }
+
+  &--right {
+    background-color: $color-green-background-dark;
+  }
+}

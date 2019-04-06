@@ -1,0 +1,12 @@
+.catalog {
+  outline: 2px solid green;
+  margin-bottom: 30px;
+}
+
+.catalog__title {
+  @include visually-hidden;
+}
+
+.catalog__item {
+  padding-bottom: 30px;
+}

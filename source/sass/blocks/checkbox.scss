@@ -1,0 +1,8 @@
+.checkbox__input {
+  @include visually-hidden;
+}
+
+.checkbox__caption {
+  line-height: 18px / $font-size-main;
+  font-weight: 700;
+}

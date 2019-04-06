@@ -1,0 +1,12 @@
+.page-header {
+  outline: 2px solid palevioletred;
+}
+
+.page-header__title {
+  @include visually-hidden;
+}
+
+.page-header__logo {
+  outline: 2px solid fuchsia;
+  padding: 20px 0;
+}
