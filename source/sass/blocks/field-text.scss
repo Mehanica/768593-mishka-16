@@ -3,6 +3,10 @@
   font-weight: 700;
 }
 
+.field-text__input {
+  font-family: inherit;
+}
+
 .field-text__input::placeholder {
   font-size: $font-size-main;
   line-height: 18px / $font-size-main;
