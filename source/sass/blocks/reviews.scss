@@ -22,23 +22,25 @@
 }
 
 .reviews__author-name {
+  font-size: $font-size-main;
+  line-height: 24px / $font-size-main;
   font-weight: 700;
   font-style: normal;
 }
 
 .reviews__author-name span {
+  font-size: $font-size-main;
+  line-height: 24px / $font-size-main;
   font-weight: 400;
   color: $color-secondary-text;
 }
 
-.reviews__prev {
-  @include visually-hidden;
-}
-
-.reviews__next {
+.reviews__prev span,
+.reviews__next span {
   @include visually-hidden;
 }
 
 .reviews__write {
   font-size: $font-size-medium;
+  line-height: 20px / $font-size-medium;
 }

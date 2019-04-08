@@ -25,7 +25,15 @@
 }
 
 .product__description {
+  outline: 2px solid fuchsia;
   padding-bottom: 30px;
+  color: $color-grey-dark;
+}
+
+.product__info {
+  font-size: $font-size-small;
+  line-height: 24px / $font-size-small;
+  font-weight: 400;
   color: $color-grey-dark;
 }
 
