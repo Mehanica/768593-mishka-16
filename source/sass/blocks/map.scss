@@ -1,0 +1,7 @@
+.map {
+  outline: 2px solid firebrick;
+}
+
+.map__title {
+  @include visually-hidden;
+}

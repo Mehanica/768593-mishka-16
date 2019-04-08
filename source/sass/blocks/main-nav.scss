@@ -1,0 +1,13 @@
+.main-nav {
+  outline: 2px solid blue;
+}
+
+.main-nav__list {
+  font-weight: 700;
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: $color-main-text;
+  text-decoration: none;
+}

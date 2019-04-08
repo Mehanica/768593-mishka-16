@@ -1,0 +1,10 @@
+.field-text {
+  line-height: 18px / $font-size-main;
+  font-weight: 700;
+}
+
+.field-text__input::placeholder {
+  font-size: $font-size-main;
+  line-height: 18px / $font-size-main;
+  color: $color-grey;
+}

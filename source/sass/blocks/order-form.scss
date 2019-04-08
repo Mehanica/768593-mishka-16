@@ -1,0 +1,44 @@
+.order-form {
+  outline: 2px solid palevioletred;
+}
+
+.order-form__title {
+  @include visually-hidden;
+}
+
+.order-form__note {
+  outline: 2px solid goldenrod;
+  padding-bottom: 27px;
+  padding-right: 18px;
+  font-size: $font-size-smallest;
+  line-height: 24px / $font-size-smallest;
+  color: $color-secondary-text;
+}
+
+.order-form__name {
+  line-height: 16px / $font-size-main;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-green;
+}
+
+.order-form__type-radio,
+.order-form__checkboxes {
+  padding-bottom: 30px;
+}
+
+.order-form__footnote {
+  padding-bottom: 30px;
+  font-size: $font-size-smaller;
+  line-height: 16px / $font-size-smaller;
+  color: $color-secondary-text;
+}
+
+.order-form__button {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 45px;
+  padding-right: 45px;
+  line-height: 16px / $font-size-main;
+  background-color: $color-main-background;
+}

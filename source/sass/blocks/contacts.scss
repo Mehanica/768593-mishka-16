@@ -1,0 +1,40 @@
+.contacts {
+  outline: 2px solid royalblue;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contacts__title {
+  outline: 2px solid greenyellow;
+  padding-bottom: 40px;
+  font-size: $font-size-medium;
+  line-height: 30px / $font-size-medium;
+  font-weight: 700;
+}
+
+.contacts__note {
+  outline: 2px solid cadetblue;
+}
+
+.contacts__inner {
+  list-style: none;
+}
+
+.contacts__item {
+  padding-bottom: 45px;
+}
+
+.contacts__item a {
+  text-decoration: none;
+  color: $color-secondary-text;
+}
+
+.contacts__map {
+  margin: 0 -30px;
+  padding-bottom: 40px;
+}
+
+.contacts__btn {
+  font-size: $font-size-medium;
+  line-height: 20px / $font-size-medium;
+}

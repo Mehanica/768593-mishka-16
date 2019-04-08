@@ -9,7 +9,7 @@
     <header class="page-header">
       <h1 class="page-header__title">Интернет магазин "Мишка" - милые штуки ручной работы</h1> <!--будет скрыт-->
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" width="" height="" alt="логотип Мишка">
+        <img src="img/logo-mobile.svg" width="86" height="35" alt="логотип Мишка">
       </div>
 
       <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню-->
@@ -37,14 +37,14 @@
       </section>
 
       <article class="product">
-        <h3 class="product__name">Вязаные корзинки<span>Товар недели</span></h3>
+        <h3 class="product__name">Вязаные корзинки<br><span>Товар недели</span></h3>
 
         <p class="product__note">Экологически  чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
         <table class="product__description">
           <tr class="product__info-wrap">
             <th class="product__info">Цвет:</th>
-            <td class="product__indo">«Тиффани»/серый</td>
+            <td class="product__info">«Тиффани»/серый</td>
           </tr>
 
           <tr class="product__info-wrap">
@@ -59,7 +59,7 @@
         </table>
 
         <div class="product__photo-wrap">
-          <img class="product__photo" src="http://placehold.it/150x100" width="" height="" alt="фото товара">
+          <img class="product__photo" src="img/triple-set-mobile@1x.jpg" width="" height="" alt="фото товара">
         </div>
 
         <span class="product__price">Цена: 990 руб.</span>
@@ -107,14 +107,14 @@
               <blockquote class="reviews__item">
                 <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 
-                <cite class="reviews__author-name">Анастасия Красильникова<span>@misssssiskras</span></cite>
+                <cite class="reviews__author-name">Анастасия Красильникова<br><span>@misssssiskras</span></cite>
               </blockquote>
 
             </div>
 
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button> <!--будует скрыто-->
+            <button class="reviews__prev" type="button"><span>Предыдущий отзыв</span></button> <!--будует скрыто-->
 
-            <button class="reviews__next" type="button">Следующий отзыв</button> <!--будет скрыто-->
+            <button class="reviews__next" type="button"><span>Следующий отзыв</span></button> <!--будет скрыто-->
           </div>
 
           <a class="reviews__write  btn" href="">Написать</a>
@@ -139,7 +139,7 @@
         <section class="contacts__map  map">
           <h3 class="map__title">Карта с адресом</h3> <!--будет скыто-->
 
-          <iframe src="http://placehold.it/150x10044" width="" height=""></iframe>
+          <iframe src="img/map-mobile@1x.jpg" width="320" height="457"></iframe>
         </section>
 
         <a class="contacts__btn  btn" href="">Напишите нам</a>
@@ -150,11 +150,11 @@
       <div class="page-footer__wrapper">
         <p class="page-footer__social">
           <span class="social-links">
-            <a class="social-link social-link--inst" href="https://www.instagram.com/htmlacademy/">Мы в инстаграмме</a> <!--будет скрыто-->
+            <a class="social-link social-link--inst" href="https://www.instagram.com/htmlacademy/"><span>Мы в инстаграмме</span></a> <!--будет скрыто-->
 
-            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a> <!--будет скрыто-->
+            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"><span>Мы в Фейсбуке</span></a> <!--будет скрыто-->
 
-            <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">Мы в Твиттере</a> <!--будет скрыто-->
+            <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy"><span>Мы в Твиттере</span></a> <!--будет скрыто-->
           </span>
         </p>
 
@@ -167,7 +167,7 @@
     <section class="pop-up  pop-up--show">
       <h2 class="pop-up__title">Добавить в корзину</h2>
 
-      <form class="pop-up__form">
+      <form class="pop-up__form" action="https://echo.htmlacademy.ru">
         <div class="pop-up__basket">
           <span class="pop-up__radio-title">Выберите размер:</span>
 
@@ -180,13 +180,13 @@
               <input class="square-radio__input" type="radio" name="size">
             </label>
 
-            <label class="square-radio  pop-up__field-radio">
-              <input class="square-radio__input" type="radio" name="size">L
+            <label class="square-radio  pop-up__field-radio">L
+              <input class="square-radio__input" type="radio" name="size">
             </label>
           </p>
         </div>
 
-        <button class="btn  btn--invert  pop-up__btn" type="button">Добавить</button>
+        <button class="btn  btn--invert  pop-up__btn" type="submit">Добавить</button>
       </form>
     </section>
   </body>

@@ -1,0 +1,22 @@
+.pop-up {
+  outline: 2px solid red;
+  padding-top: 36px;
+  padding-bottom: 45px;
+}
+
+.pop-up__title {
+  outline: 2px solid greenyellow;
+  padding-left: 55px;
+  padding-right: 58px;
+  font-size: $font-size-bigger;
+  line-height: 30px / $font-size-bigger;
+  font-weight: 700;
+}
+
+.pop-up__radio-title {
+  padding-left: 55px;
+  padding-right: 58px;
+  font-size: $font-size-small;
+  line-height: 30px / $font-size-small;
+  color: $color-secondary-text;
+}
