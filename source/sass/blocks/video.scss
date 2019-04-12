@@ -1,6 +1,17 @@
 .video {
   outline: 2px solid blue;
+
+  @include centering;
   padding-bottom: 30px;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: relative;
+  }
 }
 
 .video__title {
@@ -11,10 +22,27 @@
   font-size: $font-size-main;
   line-height: 24px / $font-size-main;
   font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    order: 2;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 682px;
+  }
 }
 
 .video__video {
   padding-bottom: 32px;
+
+  @media (min-width: $width-tablet) {
+    order: 1;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    right: 50%;
+  }
 }
 
 .video__note {
@@ -24,11 +52,30 @@
   font-size: $font-size-smallest;
   line-height: 24px / $font-size-smallest;
   color: $color-secondary-text;
+
+  @media (min-width: $width-tablet) {
+    order: 3;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 682px;
+  }
 }
 
 .video__order-btn {
-  margin-left: 33px;
-  margin-right: 38px;
-  padding-left: 23px;
-  padding-right: 23px;
+  display: block;
+  margin: 0 auto;
+  max-width: 188px;
+
+  @media (min-width: $width-tablet) {
+    order: 4;
+    margin: 0 auto;
+    max-width: 580px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-left: 682px;
+    max-width: 226px;
+    margin-right: 0;
+  }
 }

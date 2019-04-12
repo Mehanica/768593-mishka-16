@@ -1,5 +1,15 @@
 .page-header {
   outline: 2px solid palevioletred;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @include centering;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    min-height: 88px;
+  }
 }
 
 .page-header__title {
@@ -9,4 +19,16 @@
 .page-header__logo {
   outline: 2px solid fuchsia;
   padding: 20px 0;
+  padding-left: 85px;
+  height: 80px;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    padding-left: 0;
+    width: 245px;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: 452px;
+  }
 }

@@ -1,13 +1,14 @@
 // colors
 $color-main-background: #ffffff;
 $color-secondary-background: #f1f1f1;
+$color-grey-lighter-background: #f9f9f9;
 $color-black: #000000;
 // $color-black-opacity60: rgba(0, 0, 0, 0.6);
 // $color-black-opacity30: rgba(0, 0, 0, 0.3);
 $color-grey-dark: #444444;
 $color-grey-medium: #7c7c7c;
 $color-grey: #c7c7c7;
-// $color-grey-border-opacity: rgba(199, 199, 199, 0.1);
+$color-grey-lighter: #ececec;
 $color-main-text: #000000;
 $color-invert-text: #ffffff;
 $color-secondary-text: rgb(68, 68, 68,);
@@ -20,6 +21,8 @@ $color-green-background-light:#63d1bb;
 
 
 //fonts
+$font-size-extra-super-large: 53px;
+$font-size-extra-large: 43px;
 $font-size-biggest: 27px;
 $font-size-bigger: 25px;
 $font-size-big: 19px;
@@ -30,6 +33,11 @@ $font-size-smaller: 14px;
 $font-size-smallest: 13px;
 
 
+//width
+$width-tablet: 768px;
+$width-desktop: 1150px;
+$width-only-mobile: 767px;
+
 // mixins
 @mixin visually-hidden {
   position: absolute;
@@ -37,4 +45,17 @@ $font-size-smallest: 13px;
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+@mixin centering {
+  margin: 0 auto;
+  max-width: 260px;
+
+  @media (min-width: $width-tablet) {
+    max-width: 668px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 1050px;
+  }
 }

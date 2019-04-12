@@ -1,6 +1,9 @@
 .btn-green {
   display: flex;
-  padding: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 131px;
   font-size: $font-size-big;
   line-height: 24px / $font-size-big;
   font-weight: 700;
@@ -8,10 +11,23 @@
   text-decoration: none;
 
   &--left {
+    margin-top: auto;
     background-color: $color-green-background-light;
+
+    @media (min-width: $width-tablet) {
+      flex-grow: 1;
+    }
   }
 
   &--right {
     background-color: $color-green-background-dark;
+
+    @media (min-width: $width-tablet) {
+      flex-grow: 1;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-right: 99px;
   }
 }
