@@ -27,6 +27,11 @@
   font-size: $font-size-small;
   line-height: 24px / $font-size-small;
   font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-main;
+    line-height: 24px / $font-size-main;
+  }
 }
 
 .product-item__name a {
@@ -35,12 +40,22 @@
   font-weight: 700;
   text-decoration: none;
   color: $color-main-text;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-large;
+    line-height: 24px / $font-size-large;
+  }
 }
 
 .product-item__info span {
   font-size: $font-size-smallest;
   line-height: 30px / $font-size-smallest;
   color: $color-secondary-text;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-small;
+    line-height: 30px / $font-size-small;
+  }
 }
 
 .product-item__price a {

@@ -1,28 +1,39 @@
 .pop-up {
-  max-width: 320px;
+  max-width: 260px;
   margin: 0 auto;
   outline: 2px solid red;
   padding-top: 36px;
   padding-bottom: 45px;
 
   @media (min-width: $width-tablet) {
-    width: 567px;
+    max-width: 566px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 
 .pop-up__title {
   outline: 2px solid greenyellow;
-  padding-left: 55px;
-  padding-right: 58px;
   font-size: $font-size-bigger;
   line-height: 30px / $font-size-bigger;
   font-weight: 700;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-lagger;
+    line-height: 57px / $font-size-lagger;
+  }
 }
 
 .pop-up__radio-title {
-  padding-left: 55px;
-  padding-right: 58px;
+  display: block;
   font-size: $font-size-small;
   line-height: 30px / $font-size-small;
   color: $color-secondary-text;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-main;
+    line-height: 30px / $font-size-main;
+  }
 }

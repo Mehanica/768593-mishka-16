@@ -1,9 +1,7 @@
 .btn-green {
   display: flex;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 131px;
   font-size: $font-size-big;
   line-height: 24px / $font-size-big;
   font-weight: 700;
@@ -12,22 +10,28 @@
 
   &--left {
     margin-top: auto;
+    padding-bottom: 30px;
     background-color: $color-green-background-light;
 
     @media (min-width: $width-tablet) {
       flex-grow: 1;
+      width: 50%;
     }
   }
 
   &--right {
+    padding-top: 25px;
+    padding-bottom: 28px;
     background-color: $color-green-background-dark;
 
     @media (min-width: $width-tablet) {
       flex-grow: 1;
+      width: 50%;
     }
   }
 
   @media (min-width: $width-tablet) {
-    padding-right: 99px;
+    font-size: $font-size-large;
+    line-height: 30px / $font-size-large;
   }
 }

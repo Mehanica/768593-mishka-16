@@ -1,7 +1,6 @@
 .order-form {
   outline: 2px solid palevioletred;
 
-  @include centering;
   display: flex;
   flex-direction: column;
 }
@@ -12,6 +11,8 @@
 
 .order-form__note {
   outline: 2px solid goldenrod;
+
+  @include centering;
   margin-bottom: 27px;
   padding-right: 18px;
   font-size: $font-size-smallest;
@@ -31,6 +32,18 @@
   color: $color-green;
 }
 
+.order-form__checkboxes-wrapper {
+  @media (min-width: $width-tablet) {
+    background-color: $color-secondary-background;
+  }
+}
+
+.order-form__contacts-wrapper {
+  @media (min-width: $width-tablet) {
+    background-color: $color-secondary-background;
+  }
+}
+
 .order-form__type-radio,
 .order-form__checkboxes {
   outline: 2px solid red;
@@ -38,12 +51,16 @@
 }
 
 .order-form__type-radio {
+  @include centering;
+
   @media (min-width: $width-tablet) {
     display: flex;
   }
 }
 
 .order-form__checkboxes {
+  @include centering;
+
   @media (min-width: $width-tablet) {
     display: flex;
   }
@@ -51,6 +68,8 @@
 
 .order-form__name-block {
   outline: 2px solid blue;
+
+  @include centering;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -60,6 +79,8 @@
 .order-form__contacts {
   outline: 2px solid orange;
 
+  @include centering;
+
   @media (min-width: $width-tablet) {
     display: flex;
     flex-direction: column;
@@ -68,6 +89,8 @@
 
 .order-form__comments {
   outline: 2px solid violet;
+
+  @include centering;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -91,6 +114,8 @@
 }
 
 .order-form__footnote-btn-wrapper {
+  @include centering;
+
   @media (min-width: $width-tablet) {
     display: flex;
     flex-direction: row-reverse;

@@ -12,6 +12,11 @@
     font-size: $font-size-extra-large;
     line-height: 50px / $font-size-extra-large;
   }
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-extra-super-large;
+    line-height: 57px / $font-size-extra-super-large;
+  }
 }
 
 .advantages__list {
@@ -42,4 +47,9 @@
 .advantages__note {
   line-height: 20px / $font-size-main;
   font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-large;
+    line-height: 22px / $font-size-large;
+  }
 }

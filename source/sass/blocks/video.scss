@@ -24,7 +24,8 @@
   font-weight: 700;
 
   @media (min-width: $width-tablet) {
-    order: 2;
+    font-size: $font-size-large;
+    line-height: 24px / $font-size-large;
   }
 
   @media (min-width: $width-desktop) {
@@ -36,7 +37,7 @@
   padding-bottom: 32px;
 
   @media (min-width: $width-tablet) {
-    order: 1;
+    order: -1;
   }
 
   @media (min-width: $width-desktop) {
@@ -54,7 +55,8 @@
   color: $color-secondary-text;
 
   @media (min-width: $width-tablet) {
-    order: 3;
+    font-size: $font-size-small;
+    line-height: 30px / $font-size-small;
   }
 
   @media (min-width: $width-desktop) {
@@ -65,17 +67,16 @@
 .video__order-btn {
   display: block;
   margin: 0 auto;
-  max-width: 188px;
+  width: 188px;
 
   @media (min-width: $width-tablet) {
-    order: 4;
     margin: 0 auto;
-    max-width: 580px;
+    width: 580px;
   }
 
   @media (min-width: $width-desktop) {
     margin-left: 682px;
-    max-width: 226px;
+    width: 226px;
     margin-right: 0;
   }
 }

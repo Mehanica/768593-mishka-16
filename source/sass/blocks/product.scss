@@ -13,7 +13,7 @@
 
 .product__name {
   outline: 2px solid olive;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   font-size: $font-size-bigger;
   line-height: 30px / $font-size-bigger;
 
@@ -28,6 +28,8 @@
   @media (min-width: $width-desktop) {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    font-size: $font-size-extra-super-large;
+    line-height: 57px / $font-size-extra-super-large;
   }
 }
 
@@ -38,6 +40,8 @@
 }
 
 .product__name span {
+  display: block;
+  padding-top: 5px;
   font-size: $font-size-main;
   line-height: 20px / $font-size-main;
   font-weight: 700;
@@ -50,13 +54,15 @@
 }
 
 .product__note {
-  padding-bottom: 30px;
+  padding-bottom: 23px;
   font-size: $font-size-small;
   line-height: 24px / $font-size-small;
-  color: $color-grey-dark;
+  color: $color-secondary-text;
 
   @media (min-width: $width-tablet) {
     margin-right: 334px;
+    font-size: $font-size-main;
+    line-height: 30px / $font-size-main;
   }
 
   @media (min-width: $width-desktop) {
@@ -68,7 +74,7 @@
 .product__description {
   outline: 2px solid fuchsia;
   padding-bottom: 60px;
-  color: $color-grey-dark;
+  color: $color-secondary-text;
 
   @media (min-width: $width-tablet) {
     margin-right: 334px;
@@ -84,7 +90,7 @@
   font-size: $font-size-small;
   line-height: 24px / $font-size-small;
   font-weight: 400;
-  color: $color-grey-dark;
+  color: $color-secondary-text;
   text-align: left;
 }
 
@@ -103,10 +109,12 @@
   padding-bottom: 27px;
   text-align: center;
   font-weight: 700;
-  color: $color-grey-dark;
+  color: $color-secondary-text;
 
   @media (min-width: $width-tablet) {
     margin-right: 334px;
+    font-size: $font-size-large;
+    line-height: 24px / $font-size-large;
   }
 
   @media (min-width: $width-desktop) {

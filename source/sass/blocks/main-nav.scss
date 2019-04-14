@@ -9,7 +9,6 @@
 
 .main-nav__list {
   outline: 2px solid gold;
-  padding-left: 43px;
   font-weight: 700;
   list-style: none;
 
@@ -32,8 +31,13 @@
 .main-nav__item {
   outline: 2px solid orangered;
   padding-top: 23px;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
+  padding-left: 45px;
   border-bottom: 1px solid $color-grey-lighter;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 0;
+  }
 }
 
 .main-nav__item:nth-last-child(1) {

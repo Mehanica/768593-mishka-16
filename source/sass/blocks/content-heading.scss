@@ -35,7 +35,8 @@
 .content-heading__title {
   outline: 2px solid indigo;
   margin: 0 auto;
-  padding-top: 62px;
+  padding-top: 65px;
+  padding-right: 1px;
   max-width: 260px;
   text-align: center;
   font-size: $font-size-biggest;
@@ -55,7 +56,13 @@
   }
 }
 
+.content-heading__title br {
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
 .content-heading__btn {
   outline: 2px solid goldenrod;
-  padding-right: 126px;
+  padding-right: 148px;
 }

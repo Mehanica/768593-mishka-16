@@ -40,14 +40,16 @@
   }
 }
 
-.reviews__item {
+.reviews__item p {
+  padding-bottom: 27px;
   font-size: $font-size-small;
   line-height: 30px / $font-size-small;
   color: $color-secondary-text;
-}
 
-.reviews__item p {
-  padding-bottom: 27px;
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-main;
+    line-height: 30px / $font-size-main;
+  }
 }
 
 .reviews__author-name {
@@ -80,6 +82,8 @@
     padding: 0 40px;
     width: 174px;
     order: 2;
+    font-size: $font-size-main;
+    line-height: 20px / $font-size-main;
   }
 }
 

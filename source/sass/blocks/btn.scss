@@ -5,19 +5,24 @@
   font-size: $font-size-main;
   line-height: 20px / $font-size-main;
   font-weight: 700;
-  color: $color-grey-dark;
+  color: $color-secondary-text;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  border: 2px solid $color-grey-dark;
+  border: 2px solid $color-secondary-text;
 
   &--invert {
+    width: 260px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 94px;
-    padding-right: 94px;
+    padding-left: 80px;
+    padding-right: 80px;
     color: $color-invert-text;
     background-color: $color-green;
     border: none;
+
+    @media (min-width: $width-tablet) {
+      width: 350px;
+    }
   }
 }
