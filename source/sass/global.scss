@@ -1,7 +1,6 @@
 body {
   outline: 2px solid green;
   min-width: 320px;
-  padding: 0 30px;
   font-family: "OpenSans", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
   font-size: $font-size-main;
   line-height: 24px / $font-size-main;
@@ -21,4 +20,9 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

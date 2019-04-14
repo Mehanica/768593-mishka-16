@@ -1,6 +1,5 @@
 .advantages {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @include centering;
 }
 
 .advantages__title {
@@ -8,19 +7,49 @@
   font-size: $font-size-bigger;
   line-height: 30px / $font-size-bigger;
   font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-extra-large;
+    line-height: 50px / $font-size-extra-large;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-extra-super-large;
+    line-height: 57px / $font-size-extra-super-large;
+  }
 }
 
 .advantages__list {
   outline: 2px solid violet;
   list-style: none;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 175px;
+  }
 }
 
 .advantages__item {
   outline: 2px solid coral;
-  padding-bottom: 80px;
+  padding-bottom: 71px;
+  padding-top: 7px;
+  padding-right: 52px;
+
+  @media (min-width: $width-tablet) {
+    width: 50%;
+  }
 }
 
 .advantages__note {
   line-height: 20px / $font-size-main;
   font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-large;
+    line-height: 22px / $font-size-large;
+  }
 }

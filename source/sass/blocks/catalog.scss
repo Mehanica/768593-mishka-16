@@ -1,6 +1,13 @@
 .catalog {
   outline: 2px solid green;
+
+  @include centering;
   margin-bottom: 30px;
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .catalog__title {
@@ -8,5 +15,5 @@
 }
 
 .catalog__item {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }

@@ -3,11 +3,21 @@
   background-color: $color-secondary-background;
 }
 
-.page-footer__copyright {
-  padding-top: 105px;
-  padding-bottom: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
+.page-footer__wrapper {
+  outline: 2px solid brown;
+  display: flex;
+  flex-direction: column;
+
+  @include centering;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__social {
+  outline: 2px solid black;
 }
 
 .page-footer__copyright-link {
@@ -16,4 +26,10 @@
   font-weight: 700;
   text-decoration: none;
   color: $color-main-text;
+}
+
+.page-footer__logo {
+  @media (max-width: $width-tablet) {
+    @include visually-hidden;
+  }
 }
