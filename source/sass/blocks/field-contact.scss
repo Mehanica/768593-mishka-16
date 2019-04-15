@@ -1,12 +1,14 @@
-.field-contact {
-  line-height: 16px / $font-size-main;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $color-green;
-}
-
 .field-contact__input {
   font-family: inherit;
+
+  @media (min-width: $width-tablet) {
+    width: 500px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 700px;
+    margin-right: 70px;
+  }
 }
 
 .field-contact__input::placeholder {

@@ -30,6 +30,10 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $color-green;
+
+  &--comments {
+    padding-right: 128px;
+  }
 }
 
 .order-form__checkboxes-wrapper {
@@ -51,10 +55,21 @@
 }
 
 .order-form__type-radio {
+  display: flex;
+  flex-direction: column;
+
   @include centering;
 
   @media (min-width: $width-tablet) {
     display: flex;
+  }
+}
+
+.order-form__field-radio {
+  padding-left: 62px;
+
+  @media (min-width: $width-tablet) {
+    padding-left: 210px;
   }
 }
 
@@ -66,24 +81,89 @@
   }
 }
 
+.order-form__colors {
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 121px;
+  }
+}
+
+.order-form__field-checkbox {
+  @media (min-width: $width-tablet) {
+    padding-left: 81px;
+    width: 50%;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 30%;
+  }
+}
+
 .order-form__name-block {
   outline: 2px solid blue;
+  display: flex;
+  flex-direction: column;
 
   @include centering;
 
   @media (min-width: $width-tablet) {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.order-form__field-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    width: 500px;
+    padding-left: 125px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 700px;
   }
 }
 
 .order-form__contacts {
   outline: 2px solid orange;
+  display: flex;
+  flex-direction: column;
 
   @include centering;
 
   @media (min-width: $width-tablet) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.order-form__contacts span {
+  @media (min-width: $width-tablet) {
+    padding-right: 134px;
+  }
+}
+
+.order-form__contacts span:last-of-type {
+  padding-right: 108px;
+}
+
+.order-form__tel,
+.order-form__mail {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
   }
 }
 
@@ -95,6 +175,11 @@
   @media (min-width: $width-tablet) {
     display: flex;
   }
+}
+
+.order-form__comments-field {
+  display: flex;
+  flex-direction: column;
 }
 
 .order-form__footnote {
