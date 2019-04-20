@@ -1,4 +1,5 @@
 .field-comments {
+  width: 110px;
   line-height: 16px / $font-size-main;
   font-weight: 700;
   text-transform: uppercase;
@@ -7,6 +8,7 @@
 
 .field-comments__input {
   font-family: inherit;
+  padding-bottom: 23px;
 }
 
 .field-comments__input::placeholder {

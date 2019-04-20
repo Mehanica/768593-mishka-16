@@ -15,8 +15,8 @@
         </a>
       </div>
 
-      <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню-->
-        <button class="main-nav__toogler" type="button"></button>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button"></button>
 
         <div class="main-nav__wrapper">
 
@@ -27,7 +27,7 @@
             <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
             <li class="main-nav__item"><a href="#">Новые поступления</a></li>
             <li class="main-nav__item"><a href="#">Распродажа</a></li>
-            <li class="main-nav__item"><a href="#">Бесплатая доставка по России</a></li>
+            <li class="main-nav__item"><a href="#">Бесплатная доставка по России</a></li>
           </ul>
 
         </div>
@@ -35,7 +35,7 @@
     </header>
 
     <main class="page-wrapper">
-      <section class="content-heading">
+      <section class="content-heading  content-heading--form-page">
         <h2 class="content-heading__title">Вязание на заказ</h2>
       </section>
 
@@ -116,31 +116,23 @@
 
         <div class="order-form__contacts-wrapper">
           <div class="order-form__contacts">
-            <span class="order-form__name">Тел</span>
 
-            <label class="field-contact  order-form__tel">
-              <input class="field-contact__input" type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-            </label>
+            <label class="field-contact  order-form__tel" for="tel">Тел</label>
+            <input class="field-contact__input" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*" required>
 
-            <span class="order-form__name">E-mail</span>
-
-            <label class="field-contact  order-form__mail">
-              <input class="field-contact__input field-contact__input--smaller-font-size" type="email" name="email" placeholder="Ваш Email*" required>
-            </label>
+            <label class="field-contact  order-form__mail" for="mail">E-mail</label>
+            <input class="field-contact__input field-contact__input--smaller-font-size" type="email" name="email" id="mail" placeholder="Ваш Email*" required>
           </div>
         </div>
 
         <div class="order-form__comments">
-          <span class="order-form__name  order-form__name--comments">Доп</span>
-
-          <label class="field-comments  order-form__comments-field">
-            <textarea class="field-comments__input" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </label>
+          <label class="field-comments  order-form__comments-field">Доп</label>
+          <textarea class="field-comments__input" rows="7" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
 
 
         <div class="order-form__footnote-btn-wrapper">
-          <p class="order-form__footnote">*Поля обязательные для заполнения</p>
+          <p class="order-form__footnote">*Поля обязательны для заполнения</p>
 
           <button class="order-form__button  btn" type="submit">Отправить заказ</button>
         </div>

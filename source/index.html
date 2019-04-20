@@ -13,8 +13,8 @@
         <img src="img/logo-mobile.svg" width="86" height="35" alt="логотип Мишка">
       </div>
 
-      <nav class="main-nav"> <!--main-nav--open - для открытого состояния меню-->
-        <button class="main-nav__toogler" type="button"></button>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
 
         <div class="main-nav__wrapper">
 
@@ -25,7 +25,7 @@
             <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
             <li class="main-nav__item"><a href="#">Новые поступления</a></li>
             <li class="main-nav__item"><a href="#">Распродажа</a></li>
-            <li class="main-nav__item"><a href="#">Бесплатая доставка по России</a></li>
+            <li class="main-nav__item"><a href="#">Бесплатная доставка по России</a></li>
           </ul>
 
         </div>
@@ -35,10 +35,10 @@
     <main class="page-wrapper">
       <section class="content-heading  content-heading--index-page">
         <div class="content-heading__inner">
-          <h2 class="content-heading__title">Милые штуки ручной<br> работы для дома</h2>
+          <h2 class="content-heading__title  content-heading__title--index-page">Милые штуки ручной<br> работы для дома</h2>
 
-          <a class="content-heading__btn  btn-green  btn-green--left" href="interior.ru">Предметы интерьера</a>
-          <a class="content-heading__btn  btn-green  btn-green--right" href="toys.ru">Детские игрушки</a>
+          <a class="content-heading__btn  btn-green  btn-green--left" href="interior.ru"><span>Предметы интерьера<span></a>
+          <a class="content-heading__btn  btn-green  btn-green--right" href="toys.ru"><span>Детские игрушки<span></a>
         </div>
       </section>
 
@@ -49,17 +49,17 @@
 
         <table class="product__description">
           <tr class="product__info-wrap">
-            <th class="product__info">Цвет:</th>
+            <th class="product__info-title">Цвет:</th>
             <td class="product__info">«Тиффани»/серый</td>
           </tr>
 
           <tr class="product__info-wrap">
-            <th class="product__info">Диаметр:</th>
+            <th class="product__info-title">Диаметр:</th>
             <td class="product__info">25 см</td>
           </tr>
 
           <tr class="product__info-wrap">
-            <th class="product__info">Высота:</th>
+            <th class="product__info-title">Высота:</th>
             <td class="product__info">15 см</td>
           </tr>
         </table>
@@ -111,7 +111,7 @@
             <div class="reviews__list">
 
               <blockquote class="reviews__item">
-                <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                <p class="reviews__note">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 
                 <cite class="reviews__author-name">Анастасия Красильникова<br><span>@misssssiskras</span></cite>
               </blockquote>
@@ -137,7 +137,7 @@
             </li>
 
             <li class="contacts__item">адрес:
-              <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+              <p class="contacts__adress">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
             </li>
           </ul>
         </div>
@@ -168,7 +168,7 @@
           </span>
         </p>
 
-        <p class="page-footer__copyright">
+        <p class="page-footer__copyright  page-footer__copyright--index">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
         </p>
       </div>
@@ -199,5 +199,22 @@
         <button class="btn  btn--invert  pop-up__btn" type="submit">Добавить</button>
       </form>
     </section>
+
+    <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+      </script>
   </body>
 </html>

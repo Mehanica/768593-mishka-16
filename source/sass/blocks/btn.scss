@@ -11,6 +11,15 @@
   text-align: center;
   border: 2px solid $color-secondary-text;
 
+  &:hover {
+    color: $color-main-background;
+    background-color: $color-secondary-text;
+  }
+
+  &:active {
+    color: $color-main-text-opacity;
+  }
+
   &--invert {
     width: 260px;
     padding-top: 15px;

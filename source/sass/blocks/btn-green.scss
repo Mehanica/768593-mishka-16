@@ -1,7 +1,5 @@
 .btn-green {
   display: flex;
-  padding-top: 23px;
-  padding-bottom: 30px;
   font-size: $font-size-big;
   line-height: 24px / $font-size-big;
   font-weight: 700;
@@ -10,7 +8,6 @@
 
   &--left {
     margin-top: auto;
-    padding-bottom: 30px;
     background-color: $color-green-background-light;
 
     @media (min-width: $width-tablet) {
@@ -20,8 +17,6 @@
   }
 
   &--right {
-    padding-top: 25px;
-    padding-bottom: 28px;
     background-color: $color-green-background-dark;
 
     @media (min-width: $width-tablet) {
@@ -34,4 +29,48 @@
     font-size: $font-size-large;
     line-height: 30px / $font-size-large;
   }
+}
+
+.btn-green--left:hover {
+  background-color: $color-green-backgrount-leght-copy;
+
+  @media (min-width: $width-tablet) {
+    transform: translateY(-5px);
+  }
+}
+
+.btn-green--right:hover {
+  background-color: $color-green-background-dark-copy;
+
+  @media (min-width: $width-tablet) {
+    transform: translateY(-5px);
+  }
+}
+
+.btn-green--left span {
+  padding-top: 26px;
+  padding-bottom: 2px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 86px;
+    padding-bottom: 7px;
+  }
+}
+
+.btn-green--left:active span {
+  opacity: 0.3;
+}
+
+.btn-green--right span {
+  padding-top: 25px;
+  padding-bottom: 2px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 37px;
+    padding-bottom: 7px;
+  }
+}
+
+.btn-green--right:active span {
+  opacity: 0.3;
 }

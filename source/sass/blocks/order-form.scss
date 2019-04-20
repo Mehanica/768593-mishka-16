@@ -1,8 +1,8 @@
 .order-form {
   outline: 2px solid palevioletred;
-
   display: flex;
   flex-direction: column;
+  margin-bottom: 55px;
 }
 
 .order-form__title {
@@ -13,7 +13,7 @@
   outline: 2px solid goldenrod;
 
   @include centering;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   padding-right: 18px;
   font-size: $font-size-smallest;
   line-height: 24px / $font-size-smallest;
@@ -31,8 +31,9 @@
   text-transform: uppercase;
   color: $color-green;
 
-  &--comments {
-    padding-right: 128px;
+  @media (min-width: $width-tablet) {
+    padding-top: 50px;
+    width: 110px;
   }
 }
 
@@ -55,10 +56,11 @@
 }
 
 .order-form__type-radio {
+  @include centering;
+
   display: flex;
   flex-direction: column;
-
-  @include centering;
+  margin-bottom: 10px;
 
   @media (min-width: $width-tablet) {
     display: flex;
@@ -66,11 +68,16 @@
 }
 
 .order-form__field-radio {
+  padding-top: 34px;
   padding-left: 62px;
 
   @media (min-width: $width-tablet) {
     padding-left: 210px;
   }
+}
+
+.order-form__field-radio:last-of-type {
+  padding-top: 25px;
 }
 
 .order-form__checkboxes {
@@ -84,18 +91,19 @@
 .order-form__colors {
   display: flex;
   flex-direction: column;
-  padding-left: 64px;
+  padding-left: 62px;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 121px;
   }
 }
 
 .order-form__field-checkbox {
+  padding-top: 30px;
+  padding-bottom: 8px;
+
   @media (min-width: $width-tablet) {
-    padding-left: 81px;
     width: 50%;
   }
 
@@ -105,11 +113,13 @@
 }
 
 .order-form__name-block {
+  @include centering;
+
   outline: 2px solid blue;
   display: flex;
   flex-direction: column;
-
-  @include centering;
+  padding-bottom: 27px;
+  margin-bottom: 34px;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
@@ -120,17 +130,24 @@
 .order-form__field-text {
   display: flex;
   flex-direction: column;
-  padding-top: 25px;
+  padding-top: 30px;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
     width: 500px;
-    padding-left: 125px;
   }
 
   @media (min-width: $width-desktop) {
     width: 700px;
   }
+}
+
+.order-form__field-text:nth-of-type(2) {
+  padding-top: 52px;
+}
+
+.order-form__field-text:nth-of-type(3) {
+  padding-top: 52px;
 }
 
 .order-form__contacts {
@@ -180,6 +197,7 @@
 .order-form__comments-field {
   display: flex;
   flex-direction: column;
+  padding-bottom: 26px;
 }
 
 .order-form__footnote {
