@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 59px;
+  }
 }
 
 .catalog__title {
@@ -15,5 +19,9 @@
 }
 
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 57px;
+  }
 }

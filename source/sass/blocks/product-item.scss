@@ -13,28 +13,72 @@
 }
 
 .product-item__info {
-  padding-top: 30px;
-  padding-left: 27px;
+  padding-top: 22px;
+  padding-left: 29px;
   padding-right: 27px;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 25px;
+    padding-bottom: 186px;
+    padding-right: 65px;
+    padding-left: 27px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 288px;
+    padding-bottom: 39px;
+    padding-right: 57px;
+    padding-left: 27px;
+  }
+
+  &--smaller-card {
+    @media (min-width: $width-tablet) {
+      padding-top: 24px;
+      padding-bottom: 160px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding-left: 26px;
+      padding-top: 288px;
+      padding-bottom: 15px;
+    }
+  }
 }
 
 .product-item__price {
-  padding-left: 27px;
+  padding-left: 29px;
   padding-right: 27px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 12px;
+  padding-bottom: 26px;
   font-size: $font-size-small;
   line-height: 24px / $font-size-small;
   font-weight: 700;
 
   @media (min-width: $width-tablet) {
+    padding-left: 32px;
     font-size: $font-size-main;
     line-height: 24px / $font-size-main;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 22px;
+    padding-left: 27px;
+  }
+}
+
+.product-item__name {
+  padding-bottom: 6px;
+
+  &--smaller-card {
+    @media (min-width: $width-tablet) {
+      padding-bottom: 9px;
+    }
   }
 }
 
 .product-item__name a {
+  display: block;
   font-size: $font-size-main;
   line-height: 24px / $font-size-main;
   font-weight: 700;
@@ -46,6 +90,7 @@
     line-height: 24px / $font-size-large;
   }
 }
+
 
 .product-item__info span {
   font-size: $font-size-smallest;

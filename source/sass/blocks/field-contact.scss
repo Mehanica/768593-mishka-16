@@ -1,5 +1,17 @@
+.field-contact {
+  line-height: 16px / $font-size-main;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-green;
+
+  @media (min-width: $width-tablet) {
+    width: 110px;
+  }
+}
+
 .field-contact__input {
   font-family: inherit;
+  padding-bottom: 68px;
 
   @media (min-width: $width-tablet) {
     width: 500px;

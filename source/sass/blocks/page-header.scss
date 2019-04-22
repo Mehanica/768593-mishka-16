@@ -1,14 +1,18 @@
 .page-header {
-  outline: 2px solid palevioletred;
   position: relative;
   display: flex;
   flex-direction: column;
 
-  @include centering;
-
   @media (min-width: $width-tablet) {
+    outline: 2px solid palevioletred;
     flex-direction: row;
     min-height: 88px;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1050px;
   }
 }
 
@@ -17,9 +21,10 @@
 }
 
 .page-header__logo {
-  outline: 2px solid fuchsia;
-  padding: 20px 0;
-  padding-left: 85px;
+  margin: 0 auto;
+  width: 260px;
+  padding: 22px 0;
+  padding-left: 87px;
   height: 80px;
 
   @media (min-width: $width-tablet) {
