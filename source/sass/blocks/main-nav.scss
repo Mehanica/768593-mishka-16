@@ -133,6 +133,10 @@
     @include visually-hidden;
   }
 
+  @media (min-width: $width-tablet) {
+    z-index: 4;
+  }
+
   @media (min-width: $width-desktop) {
     margin-left: auto;
     order: 7;
@@ -230,6 +234,7 @@
   @media (min-width: $width-tablet) {
     margin-right: 98px;
     order: 4;
+    z-index: 4;
   }
 
   @media (min-width: $width-desktop) {
@@ -259,6 +264,7 @@
     margin-right: 36px;
     border: none;
     order: 3;
+    z-index: 4;
   }
 
   @media (min-width: $width-desktop) {
