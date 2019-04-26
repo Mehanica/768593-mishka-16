@@ -10,4 +10,9 @@
   display: block;
   line-height: 18px / $font-size-main;
   font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-size-big;
+    line-height: 18px / $font-size-big;
+  }
 }

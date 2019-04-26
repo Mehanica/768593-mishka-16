@@ -4,7 +4,6 @@
   flex-direction: column;
 
   @media (min-width: $width-tablet) {
-    outline: 2px solid palevioletred;
     flex-direction: row;
     min-height: 88px;
     width: 668px;
@@ -26,6 +25,7 @@
   padding: 22px 0;
   padding-left: 87px;
   height: 80px;
+  z-index: 1;
 
   @media (min-width: $width-tablet) {
     position: absolute;

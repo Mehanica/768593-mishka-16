@@ -2,7 +2,7 @@
   @include centering;
   display: flex;
   flex-direction: column;
-  margin-bottom: 71px;
+  margin-bottom: 70px;
 
   @media (min-width: $width-tablet) {
     position: relative;
@@ -49,7 +49,6 @@
   text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
-    outline: 2px solid orangered;
     width: 126px;
     text-align: center;
     padding-top: 8px;

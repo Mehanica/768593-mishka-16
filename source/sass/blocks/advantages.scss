@@ -2,7 +2,7 @@
   @include centering;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 56px;
+    margin-bottom: 58px;
   }
 }
 
@@ -13,8 +13,8 @@
   font-weight: 700;
 
   @media (min-width: $width-tablet) {
-    padding-top: 47px;
-    padding-bottom: 97px;
+    padding-top: 49px;
+    padding-bottom: 98px;
     font-size: $font-size-extra-large;
     line-height: 50px / $font-size-extra-large;
   }
