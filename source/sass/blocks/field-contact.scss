@@ -1,4 +1,4 @@
-.field-contact {
+.field-contact-label {
   line-height: 16px / $font-size-main;
   font-weight: 700;
   text-transform: uppercase;
@@ -6,6 +6,13 @@
 
   @media (min-width: $width-tablet) {
     width: 110px;
+    margin-right: 56px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 121px;
+    margin-right: 53px;
+    padding-left: 62px;
   }
 }
 

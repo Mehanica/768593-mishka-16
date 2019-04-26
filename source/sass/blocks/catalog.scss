@@ -1,6 +1,4 @@
 .catalog {
-  outline: 2px solid green;
-
   @include centering;
   margin-bottom: 30px;
 
@@ -19,9 +17,9 @@
 }
 
 .catalog__item {
-  margin-bottom: 33px;
+  margin-bottom: 29px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 }

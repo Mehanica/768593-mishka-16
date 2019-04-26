@@ -30,6 +30,7 @@
   }
 
   @media (min-width: $width-desktop) {
+    padding-bottom: 48px;
     padding-top: 69px;
     padding-left: 168px;
     font-size: $font-size-extra-super-large;
@@ -94,6 +95,10 @@
   color: $color-green-background-dark-copy;
 }
 
+.contacts__item a:active {
+  color: $color-green-dark-copy-opacity;
+}
+
 .contacts__item a::after {
   content: "";
   width: 177px;
@@ -102,10 +107,19 @@
   top: 28px;
   left: 31px;
   background-color: $color-green-background-light;
+
+  @media (min-width: $width-tablet) {
+    width: 200px;
+    left: 24px;
+  }
 }
 
 .contacts__item a:hover::after {
   background-color: $color-green-background-dark-copy;
+}
+
+.contacts__item a:active::after {
+  background-color: $color-green-dark-copy-opacity;
 }
 
 .contacts__item p {
@@ -122,7 +136,7 @@
   margin-bottom: 37px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 52px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $width-desktop) {

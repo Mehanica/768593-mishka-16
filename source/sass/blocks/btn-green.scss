@@ -49,11 +49,14 @@
 
 .btn-green--left span {
   padding-top: 26px;
-  padding-bottom: 2px;
+  padding-bottom: 28px;
 
   @media (min-width: $width-tablet) {
-    margin-left: 86px;
-    padding-bottom: 7px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 37px;
   }
 }
 
@@ -62,12 +65,16 @@
 }
 
 .btn-green--right span {
-  padding-top: 25px;
-  padding-bottom: 2px;
+  padding-top: 26px;
+  padding-bottom: 31px;
 
   @media (min-width: $width-tablet) {
     margin-left: 37px;
-    padding-bottom: 7px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 37px;
   }
 }
 

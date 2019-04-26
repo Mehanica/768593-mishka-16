@@ -1,9 +1,19 @@
-.field-comments {
+.field-comments-label {
   width: 110px;
   line-height: 16px / $font-size-main;
   font-weight: 700;
   text-transform: uppercase;
   color: $color-green;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 17px;
+    margin-right: 56px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-left: 62px;
+    margin-right: 66px;
+  }
 }
 
 .field-comments__input {

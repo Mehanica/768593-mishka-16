@@ -23,7 +23,7 @@
 }
 
 .page-footer__copyright {
-  padding-top: 57px;
+  padding-top: 60px;
   padding-left: 37px;
 
   @media (min-width: $width-tablet) {
@@ -36,13 +36,15 @@
   }
 
   &--index {
+    padding-top: 56px;
+
     @media (min-width: $width-tablet) {
       padding-top: 77px;
     }
-  }
 
-  @media (min-width: $width-desktop) {
-    padding-top: 59px;
+    @media (min-width: $width-desktop) {
+      padding-top: 59px;
+    }
   }
 }
 
@@ -52,6 +54,10 @@
   font-weight: 700;
   text-decoration: none;
   color: $color-main-text;
+
+  &:active {
+    color: $color-black-opacity30;
+  }
 }
 
 .page-footer__logo {

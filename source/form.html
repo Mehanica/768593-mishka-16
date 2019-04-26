@@ -35,7 +35,7 @@
     </header>
 
     <main class="page-wrapper">
-      <section class="content-heading  content-heading--form-page">
+      <section class="content-heading  content-heading--inner-page  content-heading--form-page">
         <h2 class="content-heading__title">Вязание на заказ</h2>
       </section>
 
@@ -45,22 +45,24 @@
         <p class="order-form__note">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
         <div class="order-form__type-radio">
-          <span class="order-form__name">Тип</span>
+          <span class="order-form__name  order-form__name--padding">Тип</span>
 
-          <label class="radio  order-form__field-radio">
-            <input class="radio__input" type="radio" name="type" checked>
-            <span class="radio__caption">Аксессуар для интерьера</span>
-          </label>
+          <p class="order-form__inner">
+            <label class="radio  order-form__field-radio">
+              <input class="radio__input" type="radio" name="type" checked>
+              <span class="radio__caption">Аксессуар для интерьера</span>
+            </label>
 
-          <label class="radio  order-form__field-radio">
-            <input class="radio__input" type="radio" name="type">
-            <span class="radio__caption">Детская игрушка</span>
-          </label>
+            <label class="radio  order-form__field-radio">
+              <input class="radio__input" type="radio" name="type">
+              <span class="radio__caption">Детская игрушка</span>
+            </label>
+          </p>
         </div>
 
         <div class="order-form__checkboxes-wrapper">
           <div class="order-form__checkboxes">
-            <span class="order-form__name">Цвет</span>
+            <span class="order-form__name  order-form__name">Цвет</span>
 
             <p class="order-form__colors">
               <label class="checkbox  order-form__field-checkbox">
@@ -97,7 +99,7 @@
         </div>
 
         <div class="order-form__name-block">
-          <span class="order-form__name">Фио</span>
+          <span class="order-form__name  order-form__name--margin">Фио</span>
 
           <p class="order-form__fields">
             <label class="field-text  order-form__field-text" for="name">Имя:
@@ -115,19 +117,19 @@
         </div>
 
         <div class="order-form__contacts-wrapper">
-          <div class="order-form__contacts">
+          <div class="order-form__contacts field-contact">
 
-            <label class="field-contact  order-form__tel" for="tel">Тел</label>
+            <label class="field-contact-label  order-form__tel" for="tel">Тел</label>
             <input class="field-contact__input" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*" required>
 
-            <label class="field-contact  order-form__mail" for="mail">E-mail</label>
+            <label class="field-contact-label  order-form__mail" for="mail">E-mail</label>
             <input class="field-contact__input field-contact__input--smaller-font-size" type="email" name="email" id="mail" placeholder="Ваш Email*" required>
           </div>
         </div>
 
-        <div class="order-form__comments">
-          <label class="field-comments  order-form__comments-field">Доп</label>
-          <textarea class="field-comments__input" rows="7" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <div class="order-form__comments  field-comments">
+          <label class="field-comments-label  order-form__comments-field">Доп</label>
+          <textarea class="field-comments__input" rows="6" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
 
 
@@ -160,5 +162,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>
