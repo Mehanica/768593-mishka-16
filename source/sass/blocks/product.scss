@@ -2,7 +2,7 @@
   padding-bottom: 70px;
 
   @media (min-width: $width-tablet) {
-  position: relative;
+    position: relative;
   }
 
   @media (min-width: $width-desktop) {
@@ -165,6 +165,12 @@
 
   @media (min-width: $width-desktop) {
     top: 0;
+  }
+}
+
+.product__photo {
+  @media (min-width: $width-desktop) {
+    padding-top: 45px;
   }
 }
 

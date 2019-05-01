@@ -1,14 +1,25 @@
 .reviews {
   padding-bottom: 58px;
 
-  @media(min-width: $width-tablet) {
+  @media (min-width: $width-tablet) {
     position: relative;
+    padding-top: 104px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: left 26px;
+  }
+
+  @media (min-width: 768px) and (min-resolution: 144dpi),
+    (min-width: 768px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/review@2x.jpg");
   }
 
   @media (min-width: $width-desktop) {
     margin: 0 auto;
     width: 1050px;
     padding-bottom: 65px;
+    background-position: left 33px;
   }
 }
 
