@@ -29,11 +29,35 @@
 
   @media (min-width: $width-tablet) {
     position: absolute;
+    left: -2px;
     padding-left: 0;
     width: 245px;
   }
 
   @media (min-width: $width-desktop) {
-    left: 452px;
+    top: -13px;
+    left: 450px;
+  }
+}
+
+.page-header__logo img {
+  @media (min-width: $width-tablet) {
+    width: 113px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 149px;
+  }
+}
+
+.page-header__logo img:hover {
+  @media (min-width: $width-desktop) {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo img:active {
+  @media (min-width: $width-desktop) {
+    opacity: 0.3;
   }
 }

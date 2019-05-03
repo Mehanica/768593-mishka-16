@@ -43,6 +43,10 @@ $width-tablet: 768px;
 $width-desktop: 1150px;
 $width-only-mobile: 767px;
 
+//retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 // mixins
 @mixin visually-hidden {
   position: absolute;

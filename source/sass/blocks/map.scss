@@ -5,3 +5,7 @@
 .map__title {
   @include visually-hidden;
 }
+
+.map iframe {
+  border: none;
+}

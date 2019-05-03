@@ -1,11 +1,39 @@
 .product {
-  @include centering;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 
   @media (min-width: $width-tablet) {
     position: relative;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 auto;
+    width: 1050px;
+  }
+}
+
+.product__inner {
+  @include centering;
+  display: flex;
+  flex-direction: column;
+}
+
+.product::after {
+  @media (min-width: $width-tablet) {
+    content: "";
+    width: 100%;
+    height: 24px;
+    position: absolute;
+    bottom: -6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 771px 17px;
+    background-position: -21px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    bottom: -28px;
+    background-size: auto 21px;
+    background-position: 26px 0;
   }
 }
 
@@ -137,6 +165,12 @@
 
   @media (min-width: $width-desktop) {
     top: 0;
+  }
+}
+
+.product__photo {
+  @media (min-width: $width-desktop) {
+    padding-top: 45px;
   }
 }
 

@@ -2,7 +2,7 @@
   margin-bottom: 30px;
   min-height: 176px;
   background-color: $color-secondary-background;
-  border-top: 1px solid $color-grey-medium-light;
+  border-top: 1px solid $color-grey-lighter;
 
   @media (min-width: $width-tablet) {
     margin-top: -72px;
@@ -24,13 +24,32 @@
     background-repeat: no-repeat;
     background-color: $color-grey-lighter-background;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
+
     @media (min-width: $width-tablet) {
+      position: relative;
       margin-bottom: 22px;
       min-height: 739px;
+      background-image: url("../img/hero-tablet@1x.jpg");
+      background-size: auto 746px;
+      background-position: center -3px;
+    }
+
+    @media (min-width: 768px) and (min-resolution: 144dpi),
+      (min-width: 768px) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
     }
 
     @media (min-width: $width-desktop) {
       margin-bottom: 23px;
+      background-image: url("../img/hero-desktop@1x.jpg");
+    }
+
+    @media (min-width: 1150px) and (min-resolution: 144dpi),
+      (min-width: 1150px) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
 
@@ -53,7 +72,7 @@
     width: 100%;
     height: 24px;
     position: absolute;
-    top: 733px;
+    bottom: -10px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 23px;
@@ -61,10 +80,14 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 727px;
+    bottom: -3px;
     background-size: auto 37px;
-    background-position: 87px 0;
+    background-position: 75px 0;
   }
+}
+
+.content-heading--inner-page {
+  position: relative;
 }
 
 .content-heading--inner-page::after {
@@ -73,7 +96,7 @@
     width: 100%;
     height: 24px;
     position: absolute;
-    bottom: 359px;
+    bottom: -14px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 23px;
@@ -81,7 +104,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    top: 326px;
+    bottom: -7px;
     background-size: auto 34px;
     background-position: 116px 0;
   }
