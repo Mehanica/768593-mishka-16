@@ -60,6 +60,7 @@
   background-repeat: no-repeat;
   background-size: 260px 150px;
   background-position: center;
+  border: none;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video-mobile@2x.jpg");

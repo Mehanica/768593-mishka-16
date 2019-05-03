@@ -86,13 +86,17 @@
   }
 }
 
+.content-heading--inner-page {
+  position: relative;
+}
+
 .content-heading--inner-page::after {
   @media (min-width: $width-tablet) {
     content: "";
     width: 100%;
     height: 24px;
     position: absolute;
-    bottom: 359px;
+    bottom: -14px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 23px;
@@ -100,7 +104,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    bottom: 336px;
+    bottom: -7px;
     background-size: auto 34px;
     background-position: 116px 0;
   }
