@@ -17,7 +17,7 @@
 .main-nav--opened {
   @media (max-width: $width-only-mobile) {
     position: relative;
-    min-height: 44vh;
+    min-height: 38vh;
   }
 }
 
@@ -55,14 +55,39 @@
   height: 20px;
   font-size: 0;
   cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
 
   @media (min-width: $width-tablet) {
     @include visually-hidden;
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 14px;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+}
+
 .main-nav--opened .main-nav__toggle {
   top: -49px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    width: 21px;
+    height: 20px;
+    background-image: url("../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .main-nav__list {

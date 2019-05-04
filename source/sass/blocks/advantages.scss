@@ -37,6 +37,7 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-bottom: 77px;
   padding-top: 7px;
   padding-right: 61px;
@@ -61,6 +62,17 @@
   }
 }
 
+.advantages__item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: -49px;
+  left: 8px;
+  width: 32px;
+  height: 37px;
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+}
+
 .advantages__item:nth-child(2) {
   @media (min-width: $width-tablet) {
     padding-right: 70px;
@@ -70,6 +82,17 @@
   @media (min-width: $width-desktop) {
     padding-right: 86px;
   }
+}
+
+.advantages__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
 }
 
 .advantages__item:nth-child(3) {
@@ -86,10 +109,32 @@
   }
 }
 
+.advantages__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  left: 7px;
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+}
+
 .advantages__item:nth-child(4) {
   padding-right: 50px;
   padding-bottom: 78px;
   order: 2;
+}
+
+.advantages__item:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: -44px;
+  left: 3px;
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
 }
 
 .advantages__item:nth-child(5) {
@@ -97,9 +142,31 @@
   order: 4;
 }
 
+.advantages__item:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  top: -43px;
+  left: -5px;
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+}
+
 .advantages__item:nth-child(6) {
   padding-bottom: 58px;
   order: 6;
+}
+
+.advantages__item:nth-child(6)::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
 }
 
 .advantages__note {
