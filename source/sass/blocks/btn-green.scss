@@ -1,4 +1,5 @@
 .btn-green {
+  position: relative;
   display: flex;
   font-size: $font-size-big;
   line-height: 24px / $font-size-big;
@@ -47,7 +48,59 @@
   }
 }
 
+.btn-green--left span::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 6px;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/icon-interior.svg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+
+  @media (min-width: $width-tablet) {
+    top: 29px;
+    right: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    right: -192px;
+  }
+}
+
+.btn-green--right span::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: -3px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/icon-toy.svg");
+  background-repeat: no-repeat;
+  opacity: 0.5;
+
+  @media (min-width: $width-tablet) {
+    top: 31px;
+  }
+
+  @media (min-width: $width-desktop) {
+    right: -193px;
+  }
+}
+
+.btn-green--left:hover span::before,
+.btn-green--right:hover span::before {
+  opacity: 0.7;
+}
+
+.btn-green--left:active span::before,
+.btn-green--right:active span::before {
+  opacity: 0.3;
+}
+
 .btn-green--left span {
+  position: relative;
   padding-top: 26px;
   padding-bottom: 28px;
 
@@ -65,6 +118,7 @@
 }
 
 .btn-green--right span {
+  position: relative;
   padding-top: 26px;
   padding-bottom: 31px;
 

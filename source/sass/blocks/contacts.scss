@@ -24,6 +24,7 @@
   font-weight: 700;
 
   @media (min-width: $width-tablet) {
+    position: relative;
     padding-bottom: 50px;
     font-size: $font-size-extra-large;
     line-height: 50px / $font-size-extra-large;
@@ -35,6 +36,25 @@
     padding-left: 168px;
     font-size: $font-size-extra-super-large;
     line-height: 57px / $font-size-extra-super-large;
+  }
+}
+
+.contacts__title::before {
+  @media (min-width: $width-tablet) {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 3px;
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 60px;
+    right: auto;
+    left: 63px;
   }
 }
 
