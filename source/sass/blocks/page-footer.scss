@@ -1,22 +1,14 @@
 .page-footer {
   padding-top: 19px;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
   background-color: $color-secondary-background;
 
   @media (min-width: $width-tablet) {
-    padding-bottom: 38px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $width-desktop) {
     padding-top: 0;
-  }
-}
-
-.page-footer--index {
-  padding-bottom: 20px;
-
-  @media (min-width: $width-tablet) {
-    padding-bottom: 52px;
   }
 }
 
@@ -30,6 +22,10 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 31px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 51px;
   }
 }
 
@@ -48,20 +44,11 @@
 }
 
 .page-footer__copyright {
-  padding-top: 16px;
+  padding-top: 17px;
 
   @media (min-width: $width-tablet) {
-    padding-right: 20px;
+    padding-top: 12px;
     position: relative;
-  }
-
-  &--index {
-    padding-top: 17px;
-
-    @media (min-width: $width-tablet) {
-      padding: 0;
-      padding-top: 12px;
-    }
   }
 }
 
