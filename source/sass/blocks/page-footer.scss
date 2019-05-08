@@ -1,12 +1,26 @@
 .page-footer {
-  outline: 2px solid indianred;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
+  padding-top: 19px;
+  padding-bottom: 24px;
   background-color: $color-secondary-background;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 0;
+  }
+}
+
+.page-footer--index {
+  padding-bottom: 20px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 52px;
+  }
 }
 
 .page-footer__wrapper {
-  outline: 2px solid brown;
   display: flex;
   flex-direction: column;
 
@@ -15,65 +29,97 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 31px;
   }
 }
 
 .page-footer__social {
-  outline: 2px solid black;
+  padding-bottom: 21px;
+  border-bottom: 1px solid $color-grey-smoky;
 
   @media (min-width: $width-tablet) {
-    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 78px;
+    padding-bottom: 0;
+    width: 141px;
+    border: none;
   }
 }
 
 .page-footer__copyright {
-  padding-top: 60px;
-  padding-left: 37px;
+  padding-top: 16px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 61px;
-    padding-right: 56px;
-  }
-
-  @media (min-width: $width-desktop) {
-    padding-top: 59px;
+    padding-right: 20px;
+    position: relative;
   }
 
   &--index {
-    padding-top: 56px;
+    padding-top: 17px;
 
     @media (min-width: $width-tablet) {
-      padding-top: 61px;
-    }
-
-    @media (min-width: $width-desktop) {
-      padding-top: 59px;
+      padding: 0;
+      padding-top: 12px;
     }
   }
 }
 
 .page-footer__copyright-link {
+  display: flex;
+  align-items: center;
+  padding-left: 37px;
   font-size: $font-size-big;
   line-height: 18px / $font-size-big;
   font-weight: 700;
   text-decoration: none;
   color: $color-main-text;
 
+  @media (min-width: $width-tablet) {
+    width: 185px;
+    padding: 0;
+  }
+
   &:active {
     color: $color-black-opacity30;
   }
+}
+
+.page-footer__copyright-link svg {
+  margin-left: 20px;
+  width: 46px;
+  height: 41px;
+  fill: $color-green-background-light;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 3px;
+    right: -9px;
+  }
+}
+
+.page-footer__copyright-link:hover svg {
+  fill: $color-green-background-dark-copy;
+}
+
+.page-footer__copyright-link:active svg {
+  fill: $color-green-dark-copy-opacity;
 }
 
 .page-footer__logo {
   @media (max-width: $width-tablet - 1px) {
     @include visually-hidden;
   }
-}
 
-.page-footer__logo img {
   @media (min-width: $width-tablet) {
     display: block;
-    padding-top: 52px;
-    width: 102px;
   }
+}
+
+.page-footer__logo svg:hover {
+  fill: $color-green-background-dark-copy;
+}
+
+.page-footer__logo svg:active {
+  fill: $color-green-dark-copy-opacity;
 }

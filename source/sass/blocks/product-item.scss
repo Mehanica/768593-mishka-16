@@ -82,7 +82,7 @@
 
   @media (min-width: $width-desktop) {
     width: 256px;
-    top: 389px;
+    top: 122px;
     left: 26px;
   }
 }
@@ -98,12 +98,14 @@
 
   @media (min-width: $width-desktop) {
     width: 256px;
-    top: 389px;
+    top: 122px;
     left: 26px;
   }
 }
 
 .product-item__price {
+  display: flex;
+  justify-content: space-between;
   padding-left: 29px;
   padding-right: 27px;
   padding-top: 12px;
@@ -113,6 +115,7 @@
   font-weight: 700;
 
   @media (min-width: $width-tablet) {
+    padding-right: 31px;
     padding-left: 32px;
     font-size: $font-size-main;
     line-height: 24px / $font-size-main;
@@ -185,7 +188,24 @@
 }
 
 .product-item__price a {
-  @include visually-hidden;
+  font-size: 0;
+  display: block;
+  width: 21px;
+  height: 18px;
+}
+
+.product-item__cart svg {
+  opacity: 0.2;
+}
+
+.product-item__cart:hover svg {
+  fill: $color-green-background-light;
+  opacity: 1;
+}
+
+.product-item__cart:active svg {
+  fill: $color-green-background-light;
+  opacity: 0.3;
 }
 
 .product-item__picture-link {

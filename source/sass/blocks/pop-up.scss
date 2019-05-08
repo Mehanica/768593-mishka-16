@@ -1,23 +1,34 @@
 .pop-up {
-  max-width: 260px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 100%;
   margin: 0 auto;
-  outline: 2px solid red;
-  padding-top: 36px;
+  padding-top: 31px;
   padding-bottom: 45px;
+  background-color: $color-invert-text;
 
   @media (min-width: $width-tablet) {
-    max-width: 566px;
+    max-width: 568px;
     padding-left: 108px;
     padding-right: 108px;
+  }
+
+  &--show {
+    display: block;
   }
 }
 
 .pop-up__title {
-  outline: 2px solid greenyellow;
+  padding-left: 60px;
+  padding-right: 37px;
+  padding-bottom: 11px;
   font-size: $font-size-bigger;
   line-height: 30px / $font-size-bigger;
   font-weight: 700;
-  text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $width-tablet) {
     font-size: $font-size-lagger;
@@ -27,6 +38,7 @@
 
 .pop-up__radio-title {
   display: block;
+  padding-bottom: 23px;
   font-size: $font-size-small;
   line-height: 30px / $font-size-small;
   color: $color-secondary-text;
@@ -36,4 +48,10 @@
     font-size: $font-size-main;
     line-height: 30px / $font-size-main;
   }
+}
+
+.pop-up__choose-size {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
 }
