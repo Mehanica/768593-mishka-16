@@ -1,5 +1,56 @@
 .map {
-  outline: 2px solid firebrick;
+  position: relative;
+  width: 100%;
+  min-height: 457px;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 457px;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/map-tablet@1x.jpg");
+  }
+
+  @media (min-width: 768px) and (min-resolution: 144dpi),
+    (min-width: 768px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-tablet@2x.jpg");
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    width: 524px;
+    background-image: url("../img/map-desktop@1x.jpg");
+  }
+
+  @media (min-width: 1150px) and (min-resolution: 144dpi),
+    (min-width: 1150px) and (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-desktop@2x.jpg");
+  }
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  top: 145px;
+  left: 138px;
+  width: 67px;
+  height: 100px;
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $width-tablet) {
+    top: 139px;
+    left: 364px;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 144px;
+    left: 238px;
+  }
 }
 
 .map__title {
@@ -7,5 +58,12 @@
 }
 
 .map iframe {
+  position: relative;
   border: none;
+  width: 100%;
+  height: 457px;
+
+  @media (min-width: $width-desktop) {
+    width: 524px;
+  }
 }

@@ -1,4 +1,5 @@
 .field-contact__label {
+  position: relative;
   line-height: 16px / $font-size-main;
   font-weight: 700;
   text-transform: uppercase;
@@ -18,16 +19,89 @@
 
 .field-contact__input {
   font-family: inherit;
-  padding-bottom: 68px;
+  margin-bottom: 31px;
+  padding-top: 24px;
+  padding-bottom: 15px;
+  width: 260px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $color-main-text;
 
   @media (min-width: $width-tablet) {
     width: 500px;
+    margin-bottom: 32px;
+    padding-top: 68px;
+    padding-left: 17px;
+    background-color: $color-secondary-background;
   }
 
   @media (min-width: $width-desktop) {
     width: 700px;
     margin-right: 70px;
   }
+}
+
+.field-contact__input-wrapper {
+  position: relative;
+}
+
+.field-contact__input--tel + svg,
+.field-contact__input--smaller-font-size + svg {
+  position: absolute;
+  top: 18px;
+  right: 8px;
+  opacity: 0.2;
+
+  @media (min-width: $width-tablet) {
+    top: 62px;
+    right: 24px;
+  }
+
+  @media (min-width: $width-desktop) {
+    right: 77px;
+  }
+}
+
+.field-contact__input--smaller-font-size + svg {
+  top: 15px;
+  right: 4px;
+  width: 32px;
+  height: 37px;
+  opacity: 0.2;
+
+  @media (min-width: $width-tablet) {
+    top: 0;
+    right: 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    right: 73px;
+  }
+}
+
+.field-contact__input:hover,
+.field-contact__input:active {
+  border-bottom-color: $color-green;
+}
+
+.field-contact__input:hover + svg,
+.field-contact__input:active + svg {
+  fill: $color-green;
+  opacity: 1;
+}
+
+.field-contact__input--smaller-font-size {
+  @media (min-width: $width-tablet) {
+    padding-top: 1px;
+    font-size: $font-size-big;
+    line-height: 18px / $font-size-big;
+    letter-spacing: 1px;
+  }
+}
+
+input[type="email"]::placeholder {
+  font-size: $font-size-main;
+  line-height: 18px / $font-size-main;
 }
 
 .field-contact__input::placeholder {

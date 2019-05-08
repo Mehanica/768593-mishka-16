@@ -1,1 +1,11 @@
-//
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  padding-left: 56px;
+  padding-right: 62px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+}

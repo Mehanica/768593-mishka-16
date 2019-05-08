@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <title>Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <h1 class="page-header__title">Интернет магазин "Мишка" - милые штуки ручной работы</h1> <!--будет скрыт-->
       <div class="page-header__logo">
@@ -27,8 +31,20 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a>Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-search" href="#">Поиск по сайту
+                <svg width="18" height="19">
+                  <use xlink:href="#sprite-icon-search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-cart" href="#">Корзина: пока пуста
+                <svg width="21" height="18">
+                  <use xlink:href="#sprite-icon-cart"></use>
+                </svg>
+              </a>
+            </li>
             <li class="main-nav__item"><a href="#">Новые поступления</a></li>
             <li class="main-nav__item"><a href="#">Распродажа</a></li>
             <li class="main-nav__item"><a href="#">Бесплатная доставка по России</a></li>
@@ -53,29 +69,29 @@
 
           <p class="order-form__inner">
             <label class="radio  order-form__field-radio">
-              <input class="radio__input" type="radio" name="type" checked>
+              <input class="radio__input" type="radio" name="type" checked="">
               <span class="radio__caption">Аксессуар для интерьера</span>
             </label>
 
             <label class="radio  order-form__field-radio">
               <input class="radio__input" type="radio" name="type">
-              <span class="radio__caption">Детская игрушка</span>
+              <span class="radio__caption  radio__caption--toy">Детская игрушка</span>
             </label>
           </p>
         </div>
 
         <div class="order-form__checkboxes-wrapper">
           <div class="order-form__checkboxes">
-            <span class="order-form__name">Цвет</span>
+            <span class="order-form__name  order-form__name--colors">Цвет</span>
 
             <p class="order-form__colors">
               <label class="checkbox  order-form__field-checkbox">
-                <input class="checkbox__input" type="checkbox" name="white" checked>
+                <input class="checkbox__input" type="checkbox" name="white" checked="">
                 <span class="checkbox__caption">Белый</span>
               </label>
 
               <label class="checkbox  order-form__field-checkbox">
-                <input class="checkbox__input" type="checkbox" name="grey" checked>
+                <input class="checkbox__input" type="checkbox" name="grey" checked="">
                 <span class="checkbox__caption">Серый</span>
               </label>
 
@@ -107,11 +123,11 @@
 
           <p class="order-form__fields">
             <label class="field-text  order-form__field-text" for="name">Имя:
-              <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя*" id="name" required>
+              <input class="field-text__input  field-text__input--name" type="text" name="name" placeholder="Введите ваше имя*" id="name" required="">
             </label>
 
             <label class="field-text  order-form__field-text" for="surname">Фамилия:
-              <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*" id="surname" required>
+              <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию*" id="surname" required="">
             </label>
 
             <label class="field-text  order-form__field-text" for="patronymic">Отчество:
@@ -124,16 +140,30 @@
           <div class="order-form__contacts field-contact">
 
             <label class="field-contact__label  order-form__tel" for="tel">Тел</label>
-            <input class="field-contact__input" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*" required>
+
+            <div class="field-contact__input-wrapper">
+              <input class="field-contact__input  field-contact__input--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XXX XX XX*" required="">
+
+              <svg width="25" height="24">
+                <use xlink:href="#sprite-icon-phone"></use>
+              </svg>
+            </div>
 
             <label class="field-contact__label  order-form__mail" for="mail">E-mail</label>
-            <input class="field-contact__input field-contact__input--smaller-font-size" type="email" name="email" id="mail" placeholder="Ваш Email*" required>
+
+            <div class="field-contact__input-wrapper">
+              <input class="field-contact__input field-contact__input--smaller-font-size" type="email" name="email" id="mail" placeholder="Ваш Email*" required="">
+
+              <svg width="38" height="25">
+                <use xlink:href="#sprite-icon-mail"></use>
+              </svg>
+            </div>
           </div>
         </div>
 
         <div class="order-form__comments  field-comments">
           <label class="field-comments__label  order-form__comments-field">Доп</label>
-          <textarea class="field-comments__input" rows="6" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="field-comments__input" name="comments" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
 
 
@@ -147,22 +177,43 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="логотип Мишка">
+        <div class="page-footer__logo  page-footer__logo--form">
+          <svg width="102" height="34">
+            <use xlink:href="#sprite-logo-footer"></use>
+          </svg>
         </div>
 
         <p class="page-footer__social">
           <span class="social-links">
-            <a class="social-link social-link--inst" href="https://www.instagram.com/htmlacademy/"><span>Мы в инстаграмме</span></a> <!--будет скрыто-->
+            <a class="social-link social-link--inst" href="https://www.instagram.com/htmlacademy/">
+              <svg width="22" height="21">
+                <use xlink:href="#sprite-icon-insta"></use>
+              </svg>
+              <span>Мы в инстаграмме</span>
+            </a>
 
-            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"><span>Мы в Фейсбуке</span></a> <!--будет скрыто-->
+            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">
+              <svg width="15" height="28">
+                <use xlink:href="#sprite-icon-fb"></use>
+              </svg>
+              <span>Мы в Фейсбуке</span>
+            </a>
 
-            <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy"><span>Мы в Твиттере</span></a> <!--будет скрыто-->
+            <a class="social-link social-link--tw" href="https://twitter.com/htmlacademy">
+              <svg width="23" height="20">
+                <use xlink:href="#sprite-icon-twitter"></use>
+              </svg>
+              <span>Мы в Твиттере</span>
+            </a>
           </span>
         </p>
 
         <p class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+            <svg width="27" height="34">
+              <use xlink:href="#sprite-htmlacademy"></use>
+            </svg>
+          </a>
         </p>
       </div>
     </footer>

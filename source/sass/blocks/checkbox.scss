@@ -1,3 +1,8 @@
+.checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
 .checkbox__input {
   @include visually-hidden;
 }
@@ -9,5 +14,76 @@
   @media (min-width: $width-tablet) {
     font-size: $font-size-big;
     line-height: 18px / $font-size-big;
+  }
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: -62px;
+  width: 40px;
+  height: 39px;
+  border: 2px solid $color-main-text;
+
+  @media (min-width: $width-tablet) {
+    top: 30px;
+    left: 21px;
+    width: 54px;
+    height: 52px;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: -28px;
+  }
+}
+
+.checkbox:hover::before {
+  border-color: $color-green;
+}
+
+.checkbox:active::before {
+  border-color: $color-grey;
+}
+
+.checkbox__input:checked + .checkbox__caption::before,
+.checkbox__input:checked + .checkbox__caption::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: $color-main-text;
+}
+
+.checkbox__input:checked + .checkbox__caption::before {
+  top: 45px;
+  left: -54px;
+  width: 10px;
+  transform: rotate(45deg);
+
+  @media (min-width: $width-tablet) {
+    top: 60px;
+    left: 31px;
+    width: 16px;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: -19px;
+  }
+}
+
+.checkbox__input:checked + .checkbox__caption::after {
+  top: 41px;
+  left: -50px;
+  width: 21px;
+  transform: rotate(-45deg);
+
+  @media (min-width: $width-tablet) {
+    top: 55px;
+    left: 39px;
+    width: 29px;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: -11px;
   }
 }

@@ -1,4 +1,5 @@
 .field-comments__label {
+  position: relative;
   width: 110px;
   line-height: 16px / $font-size-main;
   font-weight: 700;
@@ -16,9 +17,42 @@
   }
 }
 
+.field-comments__label::before {
+  @media (max-width: $width-only-mobile) {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -150px;
+    width: 198px;
+    height: 1px;
+    background-color: $color-green;
+  }
+}
+
 .field-comments__input {
   font-family: inherit;
-  padding-bottom: 23px;
+  letter-spacing: -1px;
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-bottom: 88px;
+  padding-right: 77px;
+  min-width: 260px;
+  outline: none;
+  border: 2px solid $color-main-text;
+
+  @media (min-width: $width-tablet) {
+    letter-spacing: 0;
+    min-width: 502px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-width: 699px;
+  }
+}
+
+.field-comments__input:hover,
+.field-comments__input:active {
+  border-color: $color-green;
 }
 
 .field-comments__input::placeholder {
