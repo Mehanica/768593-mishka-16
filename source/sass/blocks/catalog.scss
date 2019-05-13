@@ -1,13 +1,17 @@
 .catalog {
   @include centering;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $width-desktop) {
+    flex-direction: row;
     margin-bottom: 59px;
   }
 }

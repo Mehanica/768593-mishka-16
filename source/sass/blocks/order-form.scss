@@ -203,12 +203,12 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 27px;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 }
 
@@ -219,7 +219,7 @@
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
-    padding-top: 66px;
+    padding-top: 65px;
   }
 
   @media (min-width: $width-desktop) {
@@ -228,18 +228,18 @@
 }
 
 .order-form__field-text:nth-of-type(2) {
-  padding-top: 22px;
+  padding-top: 23px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 39px;
+    padding-top: 38px;
   }
 }
 
 .order-form__field-text:nth-of-type(3) {
-  padding-top: 22px;
+  padding-top: 23px;
 
   @media (min-width: $width-tablet) {
-    padding-top: 40px;
+    padding-top: 39px;
   }
 }
 

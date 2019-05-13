@@ -1,18 +1,26 @@
-.square-radio {
+.square-radio__field {
   position: relative;
   padding-top: 15px;
   padding-bottom: 17px;
-  width: 78px;
+  width: 83px;
   text-align: center;
   line-height: 16px / $font-size-main;
   font-weight: 700;
   color: $color-secondary-text;
   border: 2px solid $color-grey-lighter;
   cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    width: 113px;
+  }
 }
 
-.square-radio__input:checked + .square-radio,
-.square-radio:hover {
+.square-radio__field:hover {
+  border-color: $color-grey;
+}
+
+.square-radio__input:checked + .square-radio__field,
+.square-radio__field:active {
   border-color: $color-green-background-light;
 }
 
