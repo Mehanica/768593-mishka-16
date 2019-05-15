@@ -4,8 +4,9 @@
   min-height: 457px;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: auto 457px;
+  background-size: cover;
   background-position: center;
+  background-color: $color-map-backgrond-color;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/map-mobile@2x.jpg");
@@ -36,7 +37,7 @@
   content: "";
   position: absolute;
   top: 145px;
-  left: 138px;
+  left: calc(50% - 45px);
   width: 67px;
   height: 100px;
   background-image: url("../img/icon-map-pin.svg");
@@ -44,12 +45,10 @@
 
   @media (min-width: $width-tablet) {
     top: 139px;
-    left: 364px;
   }
 
   @media (min-width: $width-desktop) {
     top: 144px;
-    left: 238px;
   }
 }
 

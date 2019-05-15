@@ -11,6 +11,7 @@
   text-align: center;
   border: 2px solid $color-secondary-text;
 
+  &:focus,
   &:hover {
     color: $color-main-background;
     background-color: $color-secondary-text;

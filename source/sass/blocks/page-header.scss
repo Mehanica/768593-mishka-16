@@ -12,6 +12,7 @@
 
   @media (min-width: $width-desktop) {
     width: 1050px;
+    z-index: 8;
   }
 }
 
@@ -50,6 +51,7 @@
   }
 }
 
+.page-header__logo img:focus,
 .page-header__logo img:hover {
   @media (min-width: $width-desktop) {
     opacity: 0.6;

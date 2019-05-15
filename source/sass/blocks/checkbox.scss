@@ -54,6 +54,10 @@
   background-color: $color-main-text;
 }
 
+.checkbox__input:focus + .checkbox__caption {
+  outline: 1px solid $color-green;
+}
+
 .checkbox__input:checked + .checkbox__caption::before {
   top: 45px;
   left: -54px;

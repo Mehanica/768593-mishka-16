@@ -17,7 +17,7 @@
   }
 
   &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -126,6 +126,7 @@
   }
 }
 
+.video__btn:focus::before,
 .video__btn:hover::before {
   transform: scale(1.2);
   transition-duration: 1s;

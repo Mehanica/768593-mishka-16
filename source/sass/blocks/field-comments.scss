@@ -52,6 +52,7 @@
   }
 }
 
+.field-comments__input:focus,
 .field-comments__input:hover,
 .field-comments__input:active {
   border-color: $color-green;

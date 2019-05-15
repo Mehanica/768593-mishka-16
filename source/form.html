@@ -8,6 +8,8 @@
     <meta charset="utf-8">
     <title>Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -34,7 +36,7 @@
 
           <ul class="main-nav__list">
             <li class="main-nav__item  main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item  main-nav__item--to-order"><a>Вязание на заказ</a></li>
+            <li class="main-nav__item  main-nav__item--to-order"><a class="main-nav__item-to-order">Вязание на заказ</a></li>
             <li class="main-nav__item  main-nav__item--search">
               <a class="main-nav__item-search" href="#">Поиск по сайту
                 <svg width="18" height="19">
@@ -181,11 +183,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo  page-footer__logo--form">
+        <a class="page-footer__logo" href="index.html"s>
           <svg width="102" height="34">
             <use xlink:href="#sprite-logo-footer"></use>
           </svg>
-        </div>
+        </a>
 
         <p class="page-footer__social">
           <span class="social-links">

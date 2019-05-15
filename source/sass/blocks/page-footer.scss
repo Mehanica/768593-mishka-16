@@ -85,6 +85,7 @@
   }
 }
 
+.page-footer__copyright-link:focus svg,
 .page-footer__copyright-link:hover svg {
   fill: $color-green-background-dark-copy;
 }
@@ -103,7 +104,8 @@
   }
 }
 
-.page-footer__logo svg:hover {
+.page-footer__logo:focus svg,
+.page-footer__logo:hover svg {
   fill: $color-green-background-dark-copy;
 }
 

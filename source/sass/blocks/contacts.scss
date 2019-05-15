@@ -116,6 +116,7 @@
   }
 }
 
+.contacts__item a:focus,
 .contacts__item a:hover {
   color: $color-green-background-dark-copy;
 }
@@ -139,6 +140,7 @@
   }
 }
 
+.contacts__item a:focus::after,
 .contacts__item a:hover::after {
   background-color: $color-green-background-dark-copy;
 }

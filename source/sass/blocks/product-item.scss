@@ -22,6 +22,7 @@
   }
 }
 
+.product-item:focus .product-item__description,
 .product-item:hover .product-item__description {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -166,6 +167,10 @@
     line-height: 24px / $font-size-large;
   }
 
+  &:focus {
+    color: $color-black-opacity60;
+  }
+
   &:hover {
     color: $color-black-opacity60;
   }
@@ -198,6 +203,7 @@
   opacity: 0.2;
 }
 
+.product-item__cart:focus svg,
 .product-item__cart:hover svg {
   fill: $color-green-background-light;
   opacity: 1;

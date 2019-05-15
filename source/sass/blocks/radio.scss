@@ -82,6 +82,10 @@
   }
 }
 
+.radio__input:focus + .radio__caption::before {
+  border-color: $color-green;
+}
+
 .radio__input:checked + .radio__caption--toy::after {
   top: 28px;
 

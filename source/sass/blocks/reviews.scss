@@ -200,6 +200,8 @@
   background-repeat: no-repeat;
 }
 
+.reviews__prev:focus::before,
+.reviews__next:focus::before,
 .reviews__prev:hover::before,
 .reviews__next:hover::before {
   opacity: 0.6;

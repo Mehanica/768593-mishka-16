@@ -32,6 +32,7 @@
   }
 }
 
+.btn-green--left:focus,
 .btn-green--left:hover {
   background-color: $color-green-backgrount-leght-copy;
 
@@ -40,6 +41,7 @@
   }
 }
 
+.btn-green--right:focus,
 .btn-green--right:hover {
   background-color: $color-green-background-dark-copy;
 
@@ -89,6 +91,8 @@
   }
 }
 
+.btn-green--left:focus span::before,
+.btn-green--right:focus span::before,
 .btn-green--left:hover span::before,
 .btn-green--right:hover span::before {
   opacity: 0.7;

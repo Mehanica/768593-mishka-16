@@ -54,6 +54,7 @@ input[type="text"]::placeholder {
   }
 }
 
+.field-text__input:focus,
 .field-text__input:hover,
 .field-text__input:active {
   border-bottom-color: $color-green;
