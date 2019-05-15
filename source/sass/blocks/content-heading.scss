@@ -172,12 +172,6 @@
   }
 }
 
-.content-heading__title br {
-  @media (min-width: $width-tablet) {
-    display: none;
-  }
-}
-
 .content-heading__btn span {
   display: block;
   margin: 0 auto;

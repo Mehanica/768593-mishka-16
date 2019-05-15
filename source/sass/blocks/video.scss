@@ -8,12 +8,13 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 45px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $width-desktop) {
     position: relative;
     padding-bottom: 59px;
-    margin-bottom: 107px;
+    margin-bottom: 105px;
   }
 
   &:hover {
@@ -32,7 +33,7 @@
   font-weight: 700;
 
   @media (min-width: $width-tablet) {
-    padding-top: 8px;
+    padding-top: 37px;
     padding-bottom: 32px;
     padding-left: 107px;
     font-size: $font-size-large;
@@ -58,7 +59,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $width-tablet) {
-    top: 3px;
+    top: 33px;
     left: 42px;
   }
 
@@ -72,9 +73,12 @@
 .video__video {
   position: relative;
   padding-bottom: 24px;
+  height: 150px;
+  background-color: $color-grey-medium-light;
 
   @media (min-width: $width-tablet) {
-    padding-bottom: 24px;
+    padding-bottom: 0;
+    height: 455px;
     order: -1;
   }
 
@@ -88,7 +92,9 @@
 .video__btn {
   position: absolute;
   top: 50px;
-  left: 95px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 70px;
   height: 52px;
   font-size: 0;
@@ -100,12 +106,10 @@
 
   @media (min-width: $width-tablet) {
     top: 200px;
-    left: 299px;
   }
 
   @media (min-width: $width-desktop) {
     top: 200px;
-    left: 308px;
   }
 }
 
@@ -176,6 +180,7 @@
 }
 
 .video__note {
+  padding-top: 29px;
   padding-left: 35px;
   padding-right: 38px;
   padding-bottom: 26px;
@@ -184,6 +189,7 @@
   color: $color-secondary-text;
 
   @media (min-width: $width-tablet) {
+    padding-top: 0;
     padding-bottom: 36px;
     padding-left: 40px;
     font-size: $font-size-small;
