@@ -4,6 +4,7 @@
   @media (max-width: $width-only-mobile) {
     position: absolute;
     width: 100%;
+    top: 0;
   }
 
   @media (min-width: $width-tablet) {
@@ -309,7 +310,7 @@
 .main-nav__item--to-order {
   @media (min-width: $width-tablet) {
     width: 160px;
-    min-widht: auto;
+    min-width: auto;
     text-align: left;
     order: 4;
     z-index: 4;

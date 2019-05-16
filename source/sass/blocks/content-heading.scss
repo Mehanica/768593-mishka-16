@@ -97,6 +97,7 @@
     height: 24px;
     position: absolute;
     bottom: -14px;
+    left: 0;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
     background-size: auto 23px;
@@ -132,7 +133,7 @@
 .content-heading__title {
   margin: 0 auto;
   padding-top: 70px;
-  max-width: 260px;
+  width: 260px;
   text-align: center;
   font-size: $font-size-biggest;
   line-height: 30px / $font-size-biggest;
